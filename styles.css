@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 700px;
+    margin: auto;
+    background-image: url("image.jpg");
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.calculator-container {
+    background-color: rgb(155, 168, 159, 0.7);
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.data-for-calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 50px 10px 50px;
+}
+
+.data-for-calculator input {
+    margin: 10px;
+    display: flex;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border: 1px solid #7a8388;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.31);
+}
+
+.title h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: #ecae35;
+}
+
+h1 {
+    margin: 0 10px 10px 10px;
+}
+
+.button-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#calculate-button, #reset-button {
+    margin: 0 15px 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background-color: #fabc2b;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+}
+
+#reset-button {
+    padding: 3px 20px;
+}
+
+.calculate-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px 0 50px;
+}
+
+.calculate-result p {
+    margin: 5px 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+}
+
+.result > p:first-child {
+    margin-right: 10px;
+}
+
+.result > p:last-child {
+    font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+    body {
+        background-image: url("image-vertical.jpg");
+        background-repeat: no-repeat;
+    }
+}
